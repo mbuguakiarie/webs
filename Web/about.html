@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 0;
+            background: #313131;
+        }
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            z-index: -1;
+            border: 5px solid #000000;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px; /* Fixed maximum width */
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for pop-out effect */
+            text-align: center;
+        }
+        h1 {
+            color: #313131;
+        }
+    </style>
+</head>
+<body>
+    <img class="background-image" src="C:\Users\dkiar\Downloads\About us.jpg" alt="About Us">
+    <div class="content">
+        
+        <p>
+            Welcome to Bybit Car Dealership, where your journey to finding the perfect vehicle begins. With a passion for excellence and a commitment to customer satisfaction, Bybit Car Dealership has established itself as a trusted name in the automotive industry. We offer a wide range of quality vehicles to meet your needs and preferences, ensuring a seamless and enjoyable car buying experience. Our knowledgeable and friendly team is dedicated to helping you find the right car at the right price. Discover the Bybit difference today and drive away with confidence.</p>
+    </div>
+</body>
+</html>

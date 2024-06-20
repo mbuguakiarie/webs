@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bybit - Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        /* CSS for navigation bar */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            position: relative;
+        }
+        nav ul li {
+            margin: 0 10px;
+            position: relative; /* Needed for dropdown positioning */
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #905319;
+        }
+        /* Dropdown menu styles */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            padding: 0;
+            list-style-type: none;
+            min-width: 150px; /* Set a minimum width */
+        }
+        nav ul li ul li {
+            margin: 0;
+        }
+        nav ul li ul li a {
+            padding: 10px;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        .main-content {
+            text-align: center;
+            padding: 20px;
+        }
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="dropdownmenu">
+        <ul>
+            <li><a href="purchase.html">Purchase</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li>
+                <a href="services.html">Services</a>
+                <ul class="dropdown">
+                    <li><a href="services.html">Upholstery</a></li>
+                    <li><a href="services.html">Buffing</a></li>
+                    <li><a href="services.html">Servicing</a></li>
+                    <li><a href="services.html">Washing</a></li>
+                </ul>
+            </li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <h1>Welcome to Bybit Car Dealership</h1>
+        <p>Your destination for quality cars at affordable prices.</p>
+        <p>Explore our website to browse our latest inventory and learn more about our services.</p>
+        <img src="C:\Users\dkiar\OneDrive\Pictures\Luxury.jpg" alt="Car Lot Image">
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Bybit Car Dealership. All rights reserved.</p>
+    </footer>
+</body>
+</html>
