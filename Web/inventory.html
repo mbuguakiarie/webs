@@ -5,26 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
         h1 {
             background-color: #888888; 
             color: #ffffff; 
             padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .vehicle {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
         }
 
         img {
-            height: 500px;
-            width: 500px;
-            margin-bottom: 20px; 
-            border: 20px solid #000000; 
+            height: 300px;
+            width: 300px;
+            margin-bottom: 10px; 
+            border: 10px solid #000000; 
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <h1>Our vehicles</h1>
-    <img src="C:\Users\dkiar\Downloads\rolls.jpg" alt="Rolls Royce"><p>Rolls Royce</p><br><p> Ksh.100,000,000 </p>
-    <img src="C:\Users\dkiar\Downloads\beemer.jpg" alt="BMW X7"><p>BMW X7</p><br><p> Ksh.57,000,000 </p>
-    <img src="C:\Users\dkiar\Downloads\range.jpg" alt="Range Rover Sport"><p>Range Rover Sport</p><br><p> Ksh.65,000,000 </p>
-    <img src="C:\Users\dkiar\Downloads\gwag.jpg" alt="Mercedes G Wagon"><p>Mercedes G Wagon</p><br><p> Ksh.70,000,000 </p>
-    <img src="C:\Users\dkiar\Downloads\audi.jpg" alt="Audi Q7"><p>Audi Q7</p><br><p> Ksh.50,000,000 </p>
+    <h1>Our Vehicles</h1>
+    <div class="container">
+        <div class="vehicle">
+            <img src="C:\Users\dkiar\Downloads\Bybit female.jpg\rolls.jpg" alt="Rolls Royce">
+            <p>Rolls Royce</p>
+            <p class="price">Ksh.100,000,000</p>
+        </div>
+        <div class="vehicle">
+            <img src="C:\Users\dkiar\Downloads\Bybit female.jpg\beemer.jpg" alt="BMW X7">
+            <p>BMW X7</p>
+            <p class="price">Ksh.57,000,000</p>
+        </div>
+        <div class="vehicle">
+            <img src="C:\Users\dkiar\Downloads\Bybit female.jpg\range.jpg" alt="Range Rover Sport">
+            <p>Range Rover Sport</p>
+            <p class="price">Ksh.65,000,000</p>
+        </div>
+        <div class="vehicle">
+            <img src="C:\Users\dkiar\Downloads\Bybit female.jpg\gwag.jpg" alt="Mercedes G Wagon">
+            <p>Mercedes G Wagon</p>
+            <p class="price">Ksh.70,000,000</p>
+        </div>
+        <div class="vehicle">
+            <img src="C:\Users\dkiar\Downloads\Bybit female.jpg\audi.jpg" alt="Audi Q7">
+            <p>Audi Q7</p>
+            <p class="price">Ksh.50,000,000</p>
+        </div>
+    </div>
 </body>
 </html>
+

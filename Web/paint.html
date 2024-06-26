@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upholstery Services Scheduling</title>
+    <title>Paint Work Scheduling</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -60,8 +60,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Schedule Your Upholstery Service</h1>
-        <form id="upholsteryForm">
+        <h1>Schedule Your Painting Session</h1>
+        <form id="carWashForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -71,29 +71,20 @@
             <label for="registration">Vehicle Registration:</label>
             <input type="text" id="registration" name="registration" required>
 
-            <label for="material">Interior Material:</label>
-            <select id="material" name="material" required>
-                <option value="leather">Leather</option>
-                <option value="suede">Suede</option>
-                <option value="faux_leather">Faux Leather</option>
-                <option value="alcantara">Alcantara</option>
-                <option value="polyester">Polyester</option>
-            </select>
-
             <label for="date">Preferred Date:</label>
             <input type="date" id="date" name="date" required>
 
             <label for="time">Preferred Time:</label>
             <input type="time" id="time" name="time" required>
 
-            <button type="submit">Schedule Upholstery Service</button>
+            <button type="submit">Schedule Paint Work</button>
         </form>
     </div>
 
     <script>
-        document.getElementById('upholsteryForm').addEventListener('submit', function(event) {
+        document.getElementById('carWashForm').addEventListener('submit', function(event) {
             event.preventDefault();
-            alert('Thank you! Your upholstery service has been scheduled.');
+            alert('Thank you! Your car paint work has been scheduled.');
             
         });
     </script>

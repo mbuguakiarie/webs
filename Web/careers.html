@@ -3,31 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Career Opportunities at Bybit Car Dealership</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            background-color: #888888; 
+            color: #ffffff; 
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .career-description {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #888888;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555555;
+        }
+    </style>
 </head>
 <body>
-    Join the Bybit Car Dealership team and embark on a rewarding career in the automotive industry! We offer a range of exciting career opportunities for individuals who are passionate about luxury cars and dedicated to delivering exceptional customer service.
-    <br><br>
-Sales Executive: Are you a dynamic and results-driven individual with a knack for sales? Join our sales team and help customers find their dream cars while maximizing sales opportunities.
-<br><br>
-Finance Specialist: If you have a background in finance and a keen eye for detail, consider a career as a finance specialist. Help customers navigate the financing process and secure the best deals for their vehicle purchases.
-<br><br>
-Marketing Coordinator: Are you creative and strategic-minded? Join our marketing team and help promote our brand and services through various channels, including digital marketing, advertising, and events.
-<br><br>
-Service Technician: Do you have a passion for mechanics and technical expertise? Join our service department as a service technician and ensure that every vehicle receives top-notch maintenance and repairs.
-<br><br>
-Customer Relations Manager: Are you a people person with excellent communication skills? Join our customer relations team and ensure that every customer receives personalized attention and exceptional service throughout their car buying journey.
-<br><br>
-Administrative Assistant: If you're organized and detail-oriented, consider a career as an administrative assistant. Support various departments with administrative tasks and contribute to the smooth operation of the dealership.
-<br><br>
-Inventory Manager: Do you have strong organizational skills and a keen eye for inventory management? Join our inventory team and oversee the procurement, storage, and distribution of vehicles to ensure optimal inventory levels.
-<br><br>
-Technical Support Specialist: Are you tech-savvy with a knack for problem-solving? Join our technical support team and provide assistance to customers and staff with any technical issues related to vehicles or dealership systems.
-<br><br>
-Receptionist: If you're friendly and professional with excellent customer service skills, consider a career as a receptionist. Serve as the first point of contact for customers and visitors and provide assistance as needed.
-<br><br>
-Detailer: Do you have an eye for detail and a passion for making vehicles shine? Join our detailing team and ensure that every vehicle is meticulously cleaned and prepared to showroom standards.
-<br><br>
-At Bybit Car Dealership, we offer competitive salaries, comprehensive benefits, and opportunities for growth and advancement. Join us and be a part of a dynamic team that's committed to excellence in the automotive industry.
+    <h1>Career Opportunities at Bybit Car Dealership</h1>
+    <p>Join the Bybit Car Dealership team and embark on a rewarding career in the automotive industry! We offer a range of exciting career opportunities for individuals who are passionate about luxury cars and dedicated to delivering exceptional customer service.</p>
+    
+    <label for="career-select">Choose a career opportunity:</label>
+    <select id="career-select" onchange="showDescription()">
+        <option value="">Select a career</option>
+        <option value="sales-executive">Sales Executive</option>
+        <option value="finance-specialist">Finance Specialist</option>
+        <option value="marketing-coordinator">Marketing Coordinator</option>
+        <option value="service-technician">Service Technician</option>
+        <option value="customer-relations-manager">Customer Relations Manager</option>
+        <option value="administrative-assistant">Administrative Assistant</option>
+        <option value="inventory-manager">Inventory Manager</option>
+        <option value="technical-support-specialist">Technical Support Specialist</option>
+        <option value="receptionist">Receptionist</option>
+        <option value="detailer">Detailer</option>
+    </select>
+
+    <div class="career-description" id="career-description">
+        <p>Select a career from the dropdown above to see the description.</p>
+    </div>
+
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function showDescription() {
+            const descriptions = {
+                "sales-executive": "Sales Executive: Are you a dynamic and results-driven individual with a knack for sales? Join our sales team and help customers find their dream cars while maximizing sales opportunities.",
+                "finance-specialist": "Finance Specialist: If you have a background in finance and a keen eye for detail, consider a career as a finance specialist. Help customers navigate the financing process and secure the best deals for their vehicle purchases.",
+                "marketing-coordinator": "Marketing Coordinator: Are you creative and strategic-minded? Join our marketing team and help promote our brand and services through various channels, including digital marketing, advertising, and events.",
+                "service-technician": "Service Technician: Do you have a passion for mechanics and technical expertise? Join our service department as a service technician and ensure that every vehicle receives top-notch maintenance and repairs.",
+                "customer-relations-manager": "Customer Relations Manager: Are you a people person with excellent communication skills? Join our customer relations team and ensure that every customer receives personalized attention and exceptional service throughout their car buying journey.",
+                "administrative-assistant": "Administrative Assistant: If you're organized and detail-oriented, consider a career as an administrative assistant. Support various departments with administrative tasks and contribute to the smooth operation of the dealership.",
+                "inventory-manager": "Inventory Manager: Do you have strong organizational skills and a keen eye for inventory management? Join our inventory team and oversee the procurement, storage, and distribution of vehicles to ensure optimal inventory levels.",
+                "technical-support-specialist": "Technical Support Specialist: Are you tech-savvy with a knack for problem-solving? Join our technical support team and provide assistance to customers and staff with any technical issues related to vehicles or dealership systems.",
+                "receptionist": "Receptionist: If you're friendly and professional with excellent customer service skills, consider a career as a receptionist. Serve as the first point of contact for customers and visitors and provide assistance as needed.",
+                "detailer": "Detailer: Do you have an eye for detail and a passion for making vehicles shine? Join our detailing team and ensure that every vehicle is meticulously cleaned and prepared to showroom standards."
+            };
+
+            const careerSelect = document.getElementById('career-select');
+            const careerDescription = document.getElementById('career-description');
+            const selectedCareer = careerSelect.value;
+
+            if (descriptions[selectedCareer]) {
+                careerDescription.innerHTML = `<p>${descriptions[selectedCareer]}</p>`;
+            } else {
+                careerDescription.innerHTML = '<p>Select a career from the dropdown above to see the description.</p>';
+            }
+        }
+    </script>
 </body>
 </html>

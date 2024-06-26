@@ -8,7 +8,7 @@
     <style>
         /* CSS for navigation bar */
         nav {
-            background-color: #333;
+            background-color: #060505;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,7 +32,13 @@
             padding: 10px;
         }
         nav ul li a:hover {
-            background-color: #905319;
+            background-color: #a9610a90;
+        }
+        
+        nav ul li.services > a {
+            pointer-events: none;
+            cursor: default;
+            color: rgb(255, 254, 254); 
         }
         /* Dropdown menu styles */
         nav ul li ul {
@@ -69,19 +75,19 @@
     <!-- Navigation Bar -->
     <nav class="dropdownmenu">
         <ul>
-            <li><a href="purchase.html">Purchase</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li>
-                <a href="services.html">Services</a>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="purchase.html">Purchase</a></li>
+            <li class="services">
+                <a href="#">Services</a>
                 <ul class="dropdown">
-                    <li><a href="services.html">Upholstery</a></li>
-                    <li><a href="services.html">Buffing</a></li>
-                    <li><a href="services.html">Servicing</a></li>
-                    <li><a href="services.html">Washing</a></li>
+                    <li><a href="upholstery.html">Upholstery</a></li>
+                    <li><a href="paint.html">Paint Work</a></li>
+                    <li><a href="service.html">Servicing</a></li>
+                    <li><a href="washing.html">Washing</a></li>
                 </ul>
             </li>
-            <li><a href="inventory.html">Inventory</a></li>
-            <li><a href="team.html">Our Team</a></li>
+            <li><a href="ourteam.html">Our Team</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="careers.html">Careers</a></li>
         </ul>
